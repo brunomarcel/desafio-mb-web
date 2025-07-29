@@ -1,0 +1,62 @@
+@import './base.css';
+
+#app {
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: normal;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+  }
+}
+
+.form-button {
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  height: 36px;
+  margin: 16px 0;
+  width: 100%;
+}
+
+.form-button__primary {
+  background-color: var(--primary);
+  border: 0;
+  color: var(--vt-c-white);
+}
+
+.form-button__outline {
+  background-color: var(--vt-c-white);
+  border: 1px solid var(--primary);
+  color: var(--primary);
+}
+
+.wrapper-input {
+  padding-bottom: 16px;
+}
+
+.input-error {
+  position: relative;
+}
+
+.input-type__error-message {
+  position: absolute;
+  left: 0px;
+  bottom: -1px;
+  font-size: 12px;
+  color: red;
+  display: none;
+}
+.input-error .input-type__error-message {
+  display: block;
+}
