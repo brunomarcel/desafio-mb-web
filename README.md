@@ -65,13 +65,16 @@ Os testes são configurados com Vitest + Vue Test Utils.
 ### Rodar todos os testes
 
 ```bash
-npm run test
+cd client
+npm run test:unit
+
 ```
 
 ### Rodar testes com cobertura
 
 ```bash
-npm run test -- --coverage
+cd client
+npm run test:coverage
 ```
 
 Os relatórios de cobertura ficarão disponíveis na pasta `coverage`.
